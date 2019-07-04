@@ -88,3 +88,12 @@ Si tiene algún problema no dude en dejar un mensaje en los comentarios.
 
 Para empujar a heroku, asumiendo que tienes el cli instalado. 
 Si no es así (https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
+
+```javascript
+ heroku create
+ git add .
+ git commit -m "initial heroku deploy'
+ git push heroku master
+```
+
+Hecho. Ahora debería ver un enlace de despliegue. Ábrelo y deberías ver tu sitio.
