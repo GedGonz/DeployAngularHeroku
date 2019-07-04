@@ -1,5 +1,5 @@
 # Paso 1
-Vas a necesitar algo para servir tus archivos. Vamos con el expreso. También necesitaremos una "ruta" para configurar nuestro servidor (a menos que quiera codificar esos en usted)
+Vas a necesitar algo para servir tus archivos. Vamos con el express. También necesitaremos una "ruta" para configurar nuestro servidor (a menos que quiera codificar esos en usted)
 
 ```js
 npm install --save express path
