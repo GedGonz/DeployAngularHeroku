@@ -1,3 +1,7 @@
+Hola! Esta es una pequeña guía para hacer el deploy de una app en angular en heroku
+te comparto el enlace del post para que lo ves y compartas. 
+https://blogj.glitch.me/article/design/5ddea28b14aa8a04001a102e
+
 # Paso 1
 Vas a necesitar algo para servir tus archivos. Vamos con el express. También necesitaremos una "ruta" para configurar nuestro servidor (a menos que quiera codificar esos en usted)
 
