@@ -1,5 +1,5 @@
 Hola! Esta es una pequeña guía para hacer el deploy de una app en angular en heroku
-te comparto el enlace del post para que lo ves y compartas. 
+te comparto el enlace del post para que lo veas y compartas. 
 https://blogj.glitch.me/article/design/5ddea28b14aa8a04001a102e
 
 # Paso 1
