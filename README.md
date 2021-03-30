@@ -88,8 +88,6 @@ Ahora, para crear un *Procfile* para decirle a Heroku "cómo" queremos que se ej
 Ahora podemos compilar nuestra aplicación *npm install* y ejecutarla con 'node server.js'. 
 Si todo funciona, ahora deberíamos ver un sitio de trabajo en http: // localhost: 5000
 
-Si tiene algún problema no dude en dejar un mensaje en los comentarios.
-
 Para empujar a heroku, asumiendo que tienes el cli instalado. 
 Si no es así (https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
 
