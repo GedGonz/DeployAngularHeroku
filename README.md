@@ -1,15 +1,20 @@
-Hola! Esta es una pequeña guía para hacer el deploy de una app en angular en heroku
-te comparto el enlace del post para que lo veas y compartas. 
+![](https://res.cloudinary.com/gedgonz/image/upload/v1574871691/kqvhmtuktg0kr9kss9wr.png)
+
+
+
+## Hola! Esta es una pequeña guía para hacer el deploy de una app en angular en heroku
+
+Te comparto el enlace del post para que lo veas y compartas. 
 https://blogj.glitch.me/article/design/5ddea28b14aa8a04001a102e
 
-# Paso 1
+### Paso 1
 Vas a necesitar algo para servir tus archivos. Vamos con el express. También necesitaremos una "ruta" para configurar nuestro servidor (a menos que quiera codificar esos en usted)
 
 ```js
 npm install --save express path
 ```
 
-# Paso 2
+### Paso 2
 Ahora, si queremos que Heroku construya nuestro proyecto en sus servidores, necesitamos decirles dos cosas.
 
 1. Cómo construir nuestro proyecto y 
@@ -38,7 +43,7 @@ Puedes averiguarlo con
 node --version
 npm --version
 ```
-# Paso 3
+### Paso 3
 De forma predeterminada, el ángulo separa de las implementaciones lo que cree que son adiciones de "desarrollo" únicamente. Sin embargo, dado que Heroku está construyendo nuestro código, debemos darle la capacidad de ejecutar esos módulos.
 
 Para hacer esto usted puede mover *@angular/cli, @angular/compiler-cli*, *typescripty* *"@angular-devkit/build-angular": "~0.6.8"*__ __ * de nuestros devDependencies a las dependencias. O podemos hacer que Heroku instale esos módulos por su cuenta.
@@ -49,7 +54,7 @@ Personalmente prefiero la primera ya que le permite especificar versiones, sin e
  "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
 ```
 
-# Etapa 4
+### Etapa 4
 
 Crea nuestro archivo de servidor. En su directorio de aplicación principal (el que tiene package.json) cree un archivo llamado server.js. Agrega lo siguiente
 
@@ -75,7 +80,7 @@ app.listen(process.env.PORT || 5000);
 
 Recuerde reemplazar MY_APP_NAME (ambos) al nombre de su aplicación.
 
-# Paso 5
+### Paso 5
 
 Ahora, para crear un *Procfile* para decirle a Heroku "cómo" queremos que se ejecute nuestra aplicación. En su directorio de proyecto (el mismo con package.json) cree un archivo llamado Procfiley coloque lo siguiente
 
@@ -83,7 +88,7 @@ Ahora, para crear un *Procfile* para decirle a Heroku "cómo" queremos que se ej
  web: node server.js
 ```
 
-# Paso 6. Paso final
+### Paso 6. Paso final
 
 Ahora podemos compilar nuestra aplicación *npm install* y ejecutarla con 'node server.js'. 
 Si todo funciona, ahora deberíamos ver un sitio de trabajo en http: // localhost: 5000
